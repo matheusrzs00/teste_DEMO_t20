@@ -2,12 +2,259 @@
 <html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
-        <title>Git e Github</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Criando uma página</title>
     </head>
     <body>
         <header>
-            <h1>Titulo da Aula</h1>
+            <section>
+                <fieldset>
+                <figure>
+                    <a href="https://www.letras.mus.br/" target="_blank">
+                        <img src="data:image/png;base64,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">
+                    </a>
+                </figure>
+                    <nav>
+                        <button>
+                    <a href="https://www.letras.mus.br/mais-acessadas/" target="_blank">
+                            Músicas
+                    </a>
+                        </button>
+                        <button>
+                    <a href="https://www.letras.mus.br/mais-acessadas/" target="_blank">
+                            Artistas
+                    </a>
+                        </button>
+                        <button>
+                    <a href="https://www.letras.mus.br/estilos/" target="_blank">
+                            Estilos musicais  
+                    </a>
+                        </button>
+                        <button>
+                    <a href="https://www.letras.mus.br/playlists.html" target="_blank">
+                            Playlists
+                    </a>
+                        </button>
+                        <button>
+                    <a href="https://www.letras.mus.br/academy/dicionario/" target="_blank">
+                            Dicionário
+                    </a>
+                        </button>
+                        <button>
+                    <a href="https://www.letras.mus.br/blog/" target="_blank">
+                            Blog
+                    </a>
+                        </button>
+                        <button>
+                    <a href="https://www.letras.mus.br/#" target="_blank">
+                            Aplicativos
+                    </a>
+                        </button>
+                    </nav>
+                <textarea type="text" placeholder="O que você quer ouvir agora?" rows="2" cols="65" ></textarea>
+                        <button type="submit">Pesquisar</button>
+            </fieldset>
+            </section>
         </header>
+        <main>
+            <fieldset>
+            <figure>
+                    <a href="https://www.letras.mus.br/" target="_blank">
+                        <img src="https://i.ytimg.com/vi/ocpDEOXABWg/maxresdefault.jpg" width="1000">
+                    </a>
+            </figure>
+            </fieldset>
+            <section>
+            <fieldset>
+                        <h1>MAIS ACESSADOS</h1>
+                <ol>
+                    <li>
+                    <a href="https://www.letras.mus.br/skillet//" target="_blank">
+                        <h3>STARS</h3>
+                    </a>
+                        <legend><small>Skillet</small></legend>
+                    </li>
+                    <li>
+                    <a href="https://www.letras.mus.br/thousand-foot-krutch/courtesy-call/" target="_blank">
+                        <h3>COURTESY CALL</h3>
+                    </a>
+                        <legend><small>Thousand foot krutch</small></legend>
+                    </li>
+                    <li>
+                    <a href="https://www.letras.mus.br/skillet/1101399/" target="_blank">
+                        <h3>WHISPERS IN THE DARK</h3>
+                    </a>
+                        <legend><small>Skillet</small></legend>
+                    </li>
+                    <li>
+                    <a href="https://www.letras.mus.br/post-malone/sunflower-feat-swae-lee/traducao.html" target="_blank">
+                        <h3>SUNFLOWER</h3>
+                    </a>
+                        <legend><small>Post Malone</small></legend>
+                    </li>
+                    <li>
+                    <a href="https://www.letras.mus.br/metallica/25943/" target="_blank">
+                        <h3>ENTER SANDMAN</h3>
+                    </a>
+                        <legend><small>Metallica</small></legend>
+                    </li>
+                    <li>
+                    <a href="https://www.letras.mus.br/ac-dc/97135/traducao.html" target="_blank">
+                        <h3>HAIL CAESAR</h3>
+                    </a>
+                        <legend><small>AC/DC</small></legend>
+                    </li>
+                </ol>
+                        <button>
+                    <a href="https://www.letras.mus.br/mais-acessadas/">Ver mais músicas e artistas
+                    </a>
+                        </button>
+            </fieldset>
+            </section>
+            <section> 
+                <fieldset>
+                        <h1>CADASTRE-SE PARA CRIAR SUAS PLAYLISTS E OUVIR MUITO MAIS!</h1>
+                            <div>
+                    <label for="nome">Nome completo</label>
+                            </div>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui" required="true"/>
+                            <div>
+                    <label for="email">E-mail</label>
+                            </div>
+                        <input type="text" id="email" name="email" placeholder="Digite seu e-mail aqui" required="true"/>
+                            <div>
+                    <label for="senha">Senha</label>
+                            </div>
+                        <input type="password" id="senha" name="senha" placeholder="Digite sua senha aqui" required="true"/>
+                            <div>
+                    <label for="confirmasenha">Confirme sua senha</label>
+                            </div>
+                        <input type="password" id="confirmasenha" name="confirmasenha" placeholder="Confirme sua senha aqui" required="true"/>
+                            <div>
+                        <button type="submit">Confirmar e cadastrar</button>
+                            </div>
+                </fieldset>        
+            </section>
+        </main>
+        <footer>
+            <section>
+            <fieldset>
+                    <nav>
+                        <h2>Músicas</h2>
+                        <button>
+                    <a href="https://www.letras.mus.br/mais-acessadas/" target="_blank">
+                        Top Músicas
+                    </a>
+                        </button>
+                        <button>
+                    <a href="https://www.letras.mus.br/novidades.html" target="_blank">
+                        Atualizações
+                    </a>
+                        </button>
+                         <button>
+                    <a href="https://www.letras.mus.br/lancamentos.html" target="_blank">
+                            Lançamentos
+                    </a>
+                        </button>
+                        <button>
+                    <a href="https://www.letras.mus.br/playlists.html" target="_blank">
+                                Playlists do musicas
+                    </a>    
+                        </button>
+                            <div>
+                        <h2>Artistas</h2>
+                        <button>
+                    <a href="https://www.letras.mus.br/mais-acessadas/" target="_blank"> Top artistas
+                    </a>
+                        </button>
+                        <button>
+                    <a href="https://www.letras.mus.br/top-albuns/" target="_blank">Top albuns
+                    </a>
+                        </button>    
+                            </div>
+                            <div>
+                        <h2>Participe</h2>
+                        <button>
+                    <a href="https://www.letras.mus.br/perfil_musical.html" target="_blank">Crie seu perfil musical
+                    </a>
+                        </button>
+                        <button>
+                    <a href="https://www.letras.mus.br/contribuicoes/" target="_blank">Envie albuns        
+                    </a>
+                        </button>
+                        <button>
+                    <a href="https://www.letras.mus.br/contribuicoes/" target="_blank">Envie letras                
+                    </a>
+                        </button>
+                        <button>
+                    <a href="https://www.letras.mus.br/contribuicoes/" target="_blank">Correções de letras                        
+                    </a>
+                        </button>
+                            </div>
+                            <div>
+                        <h2>Sobre o site</h2>
+                        <button>
+                    <a href="https://www.letras.mus.br/faq.html" target="_blank">Ajuda
+                    </a>
+                        </button>
+                        <button>
+                    <a href="https://www.letras.mus.br/aviso-legal.html" target="_blank">Termos de uso e política de privacidade
+                    </a>
+                        </button>
+                        <button>
+                    <a href="https://www.letras.mus.br/aviso-legal-academy.html" target="_blank">Termos de uso do Letras Academy
+                    </a>
+                        </button>
+                        <button>
+                    <a href="https://www.letras.mus.br/padroes-para-envios.html" target="_blank">Padrões para envios
+                    </a>
+                        </button>
+                        <button>
+                    <a href="https://www.letras.mus.br/trabalheconosco" target="_blank">Trabelh conosco
+                    </a>
+                        </button>
+                            </div>
+                    </nav>
+            </fieldset>
+            </section>
+            <section>
+            <fieldset>
+                    <nav>
+                            <div>
+                        <h2>Siga nossas redes sociais</h2>
+                        <button>
+                    <a href="https://www.instagram.com/letrasmusbr/" target="_blank">Instagram
+                    </a>
+                        </button>
+                        <button>
+                    <a href="https://www.tiktok.com/@letras" target="_blank">TikTok
+                    </a>
+                        </button>
+                        <button>
+                    <a href="https://www.youtube.com/letrasmusbr" target="_blank">Youtube
+                    </a>
+                        </button>
+                        <button>
+                    <a href="https://facebook.com/letrasmusbr" target="_blank">Facebook
+                    </a>
+                        </button>
+                        <button>
+                    <a href="https://twitter.com/letras" target="_blank">Twitter
+                    </a>
+                        </button>
+                        <button>
+                    <a href="https://br.pinterest.com/letrasmusbr" target="_blank">Pinterest
+                    </a>
+                        </button>
+                        <button>
+                    <a href="https://www.linkedin.com/company/letras/" target="_blank">Linkedin
+                    </a>
+                        </button>
+                            </div>
+                    </nav>
+            </fieldset>
+            </section>
+        </footer>
 
     </body>
 </html>
